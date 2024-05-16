@@ -15,14 +15,13 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
   font-variation-settings: "wght" var(--font-weight-content);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background: var(--background);
   width: calc(100vw * (700 / 1440));
+  min-width: 430px;
   margin-block-start: 100px;
   margin-block-end: 100px;
   color: var(--text-color);
@@ -102,12 +101,12 @@
   transition: width 0.5s ease-in-out;
 }
 
-.theme-menu__button:focus-within {
+.theme-menu__button:focus-visible {
   outline: none;
   opacity: 0.6;
 }
 
-.theme-menu__button:focus-within::after {
+.theme-menu__button:focus-visible::after {
   width: 100%;
 }
 
@@ -124,7 +123,7 @@
   left: -20px;
 }
 
-.container {
+.card {
   border: 2px solid var(--text-color);
   background-color: var(--bg-color);
 }
@@ -142,13 +141,13 @@
   opacity: 0.5;
 }
 
-.container__title {
+.card__title {
   font-size: 18px;
-  font-variation-settings: "wght" var(--themes-font-weight-title);
+  font-variation-settings: "wght" var(--font-weight-content);
   padding: 5px 10px;
 }
 
-.container__cover {
+.card__cover {
   position: relative;
   border-top: 2px solid var(--text-color);
   border-bottom: 2px solid var(--text-color);
@@ -314,6 +313,7 @@
 
   .button svg {
     transition: none;
+    color: var(--btn-text-color);
     mix-blend-mode: difference;
   }
 
