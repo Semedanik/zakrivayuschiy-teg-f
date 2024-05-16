@@ -23,7 +23,7 @@
     }
   }
   
-  @keyframes like-zoom {
+  @keyframes zoom {
     0% {
       scale: 1;
     }
@@ -37,7 +37,7 @@
     }
   }
   
-  @keyframes like-sparks {
+  @keyframes sparks {
     0% {
       fill: transparent;
     }
@@ -97,12 +97,12 @@
   
   .like-icon.is-liked .body {
     transform-origin: center;
-    animation: like-zoom 0.3s 0.1s ease-in alternate;
+    animation: zoom 0.3s 0.1s ease-in alternate;
   }
   
   .like-icon.is-liked .sparks {
     transform-origin: center;
-    animation: like-sparks 0.3s 0.3s ease-in alternate;
+    animation: sparks 0.3s 0.3s ease-in alternate;
   }
   
   
