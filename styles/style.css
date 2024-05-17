@@ -185,7 +185,7 @@
   padding-bottom: 22px;
   font-size: 18px;
   line-height: 21px;
-  font-variation-settings: "wght" var(--font-weight-content);
+  font-variation-settings: "wght" var(--font-weight-title);
 }
 
 .container__buttons {
@@ -195,7 +195,7 @@
   padding-bottom: 3px;
 }
 
-.footer {
+.main_footer {
   display: flex;
   justify-content: center;
 }
@@ -230,7 +230,7 @@
   z-index: -1;
 }
 
-.card__icon-button:focus-within::before {
+.card__icon-button:focus-visible::before {
   opacity: 100;
   z-index: 0;
 }
@@ -340,7 +340,7 @@
 
 dialog::backdrop {
   opacity: 0.75;
-  background: var(--text-color, #000);
+  background: #000;
 }
 
 .dialog__container {
